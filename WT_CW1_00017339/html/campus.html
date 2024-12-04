@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conacts</title>
+    <link rel="stylesheet" href="../styles/campus.css">
+</head>
+<body>
+    <header class="header">       
+        <!-- main navigation bar with logo,hamburger menu and banner(image under nav)-->
+        <nav class="navbar">  
+            <div class="logo">
+               <img src="../images/logo.png" alt="" width="">
+            </div>
+       
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; 
+            </div>           
+            <div class="navbar-links" id="navbarLinks">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+        </nav>
+       
+       <script>
+            function toggleMenu() {
+                const navbarLinks = document.getElementById("navbarLinks");
+                navbarLinks.classList.toggle("active");
+            }
+        </script>
+        <div class="container-image">
+            <img class="main" src="../images/campus-8.jpeg" alt="" >
+            <div class="text-overlay">Life at WIUT! </div>
+        </div>
+         
+    </header>
+
+     <!-- title text  -->
+     <div class="content" >
+        <div class="text"><h3>Explore our campus </h3><hr>    
+      </div>      
+    </div>
+
+    
+    <!-- Campus images slideshow 1 -->
+    <div class="slideshow-container" id="slideshow1">
+      <div class="mySlides fade">
+        <img src="../images/campus-7.png" style="width:100%">
+     </div>
+      <div class="mySlides fade">
+        <img src="../images/campus-3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/campus-6.png" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(1, 'slideshow1')">&#10094;</a>
+      <a class="next" onclick="plusSlides(-1, 'slideshow1')">&#10095;</a>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow1')"></span>
+      </div>
+    </div>
+    
+    <!-- Campus images slideshow 2 -->
+    <div class="slideshow-container" id="slideshow2">
+      <div class="mySlides fade">
+        <img src="../images/campus-6.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/campus-7.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/campus-2.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(1, 'slideshow2')">&#10094;</a>
+      <a class="next" onclick="plusSlides(-1, 'slideshow2')">&#10095;</a>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow2')"></span>
+      </div>
+    </div>
+    
+    <!-- Campus images slideshow 3 -->
+    <div class="slideshow-container" id="slideshow3">
+      <div class="mySlides fade">
+        <img src="../images/campus-2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/campus-7.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/campus-6.png" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(1, 'slideshow3')">&#10094;</a>
+      <a class="next" onclick="plusSlides(-1, 'slideshow3')">&#10095;</a>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1, 'slideshow3')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow3')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow3')"></span>
+      </div>
+    </div>
+    
+    <script>
+
+      // Initializing the slide index for each slideshow
+      let slideIndex1 = 1;
+      let slideIndex2 = 1;
+      let slideIndex3 = 1;
+    
+      // Showing the first image for each slideshow
+      showSlides(slideIndex1, 'slideshow1');
+      showSlides(slideIndex2, 'slideshow2');
+      showSlides(slideIndex3, 'slideshow3');
+    
+      // Next and previous buttons
+      function plusSlides(n, slideshowId) {
+        if (slideshowId === 'slideshow1') {
+          showSlides(slideIndex1 += n, 'slideshow1');
+        } else if (slideshowId === 'slideshow2') {
+          showSlides(slideIndex2 += n, 'slideshow2');
+        } else if (slideshowId === 'slideshow3') {
+          showSlides(slideIndex3 += n, 'slideshow3');
+        }
+      }
+    
+      // controls for each slideshow
+      function currentSlide(n, slideshowId) {
+        if (slideshowId === 'slideshow1') {
+          showSlides(slideIndex1 = n, 'slideshow1');
+        } else if (slideshowId === 'slideshow2') {
+          showSlides(slideIndex2 = n, 'slideshow2');
+        } else if (slideshowId === 'slideshow3') {
+          showSlides(slideIndex3 = n, 'slideshow3');
+        }
+      }
+    
+      // Showing the slides
+      function showSlides(n, slideshowId) {
+        let i;
+        let slides = document.querySelectorAll(`#${slideshowId} .mySlides`);
+        let dots = document.querySelectorAll(`#${slideshowId} .dot`);
+        if (n > slides.length) { if (slideshowId === 'slideshow1') slideIndex1 = 1; else if (slideshowId === 'slideshow2') slideIndex2 = 1; else slideIndex3 = 1; }
+        if (n < 1) { if (slideshowId === 'slideshow1') slideIndex1 = slides.length; else if (slideshowId === 'slideshow2') slideIndex2 = slides.length; else slideIndex3 = slides.length; }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[n-1].style.display = "block";
+        dots[n-1].className += " active";
+      }
+    </script>
+    
+    <!-- footer -->
+    <footer>
+
+        <div class="footer-container">
+               
+            <div class="footer-section footer-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+    
+            
+            <div class="footer-section social-links">
+                <h3>- Follow us on social media -</h3>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+       
+        <div class="footer-section">
+            <h3>- We are -</h3>
+            <P>Westminster International University in Tashkent</P>
+        </div>
+                 
+        <div class="legal-info">
+
+            <p>&copy; All Rights Reserved. </a></p>
+        </div>
+
+    </footer>
+    
+
+</body>
+</html>

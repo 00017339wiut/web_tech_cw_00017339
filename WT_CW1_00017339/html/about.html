@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/about.css">
+
+</head>
+<body>
+    <header class="header">      
+        <!-- main navigation bar with logo,hamburger menu and banner(image under nav)-->
+        <nav class="navbar">
+           
+            <div class="logo">
+               <img src="../images/logo.png" alt="" width="">
+            </div>
+       
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            
+            <div class="navbar-links" id="navbarLinks">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+        </nav>
+       
+       <script>
+            function toggleMenu() {
+                const navbarLinks = document.getElementById("navbarLinks");
+                navbarLinks.classList.toggle("active");
+            }
+        </script>
+        </div>
+       
+        <div class="container-image">
+            <img class="main" src="../images/about-1.png" alt="">
+            <div class="text-overlay">About WIUT </div>
+        </div>
+              
+    </header>
+
+     <!--  the main content (text and image)  -->
+     <div class="content" >
+        <div class="text">
+            <h3> About  WIUT! </h3>
+            <p> Westminster International University in Tashkent (WIUT) <br>
+                is Uzbekistan's first international university. <br>  
+                WIUT was established in 2002 in<br> conjunction with the "UMID" Presidential Foundation,
+                <br> the Ministry of Higher and Secondary Specialized Education,
+                <br>and the University of Westminster in London. 
+            </p>
+      </div>
+        <div>
+            <img class="img2" src="../images/about-2.jpg" alt="">
+        </div>
+    </div>
+
+    <!--  squares with text  -->
+    <div class="square-text">
+        <div class="square">
+             
+            <p> 
+                <strong> Our Vision</strong> <br><br>
+                is to represent the excellence of Uzbekistan's 
+                education and research capacity in the global area.
+            </p>
+        </div>
+        <div class="square">
+            
+            <p>
+                <strong> Our Mission</strong> <br><br>
+                 To provide International Standards of Education that
+                  contribute to the Central Asian communities as well as Global Community. 
+            </p>
+        </div>
+        <div class="square">
+            
+            <p>    
+                <ul>
+                    <strong> Our Values</strong> <br><br>
+                    <li> Audacity </li>
+                    <li> Integrity </li>
+                    <li> Diversity </li>
+                    <li> Influence </li>
+               </ul>
+            </p>
+       </div>
+       <div class="square">           
+         <p> 
+            <strong> Innovation </strong> <br><br>
+            Join our startup incubator INNOWIUT 
+            and launch your own startup with the help of our experts.
+          </p>
+        </div>
+        <div class="square">
+             
+            <p> 
+                <strong> Career Center </strong> <br><br>
+                Find the job you are looking for with
+                the help of our career center.
+            </p>
+        </div>
+    </div>
+
+    <!--  footer with quick links and scocial media links-->
+    <footer>
+
+        <div class="footer-container">
+               
+            <div class="footer-section footer-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+    
+            
+            <div class="footer-section social-links">
+                <h3>- Follow us on social media -</h3>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+       
+        <div class="footer-section">
+            <h3>- We are -</h3>
+            <P>Westminster International University in Tashkent</P>
+        </div>
+                 
+        <div class="legal-info">
+
+            <p>&copy;  All Rights Reserved. </a></p>
+        </div>
+
+    </footer>
+    
+
+</body>
+</html>

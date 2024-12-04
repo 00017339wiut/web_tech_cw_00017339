@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/homestyle.css">
+</head>
+<body>
+   
+    <header class="header">
+        
+        <!-- main navigation bar with logo,hamburger menu and banner -->
+        <nav class="navbar">      
+            <div class="logo">
+               <img src="../images/logo.png" alt="" width="">
+            </div>
+       
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            
+            <div class="navbar-links" id="navbarLinks">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+        </nav>
+       
+       <script>
+            function toggleMenu() {
+                const navbarLinks = document.getElementById("navbarLinks");
+                navbarLinks.classList.toggle("active");
+            }
+        </script>
+        </div>
+       
+        <div>
+            <img class="main" src="../images/home-1.jpg" alt="">
+        </div>
+         
+    </header>
+
+    <!-- main content with text and image  -->
+    <div class="content" >
+
+        <div class="text">
+            <h3> Welcome <br> to WIUT! </h3>
+            <p> Discover a world of academic excellence, <br>
+                innovative research, and vibrant campus.<br>  
+                Explore our diverse programs, meet our<br> dedicated faculty, 
+              and connect with<br> a global community of talented students.
+           <br><br>Your journey to a brighter future starts here! </p>
+      </div>
+
+        <div>
+            <img class="img2" src="../images/home-2.jpg" alt="">
+        </div>
+
+    </div>
+
+<!-- footer with quick links, social media links and legal info  -->
+    <footer>
+
+        <div class="footer-container">           
+    
+            <div class="footer-section footer-links">
+                <h3>- Quick Links -</h3>
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+    
+            
+            <div class="footer-section social-links">
+                <h3>- Follow us on social media -</h3>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+      
+        <div class="footer-section">
+            <h3>- We are -</h3>
+            <P>Westminster International University in Tashkent</P>
+        </div>         
+        
+        <div class="legal-info">
+            <p> This website was created to fulfill Web Technology
+                module's requirements and does not represent an actual company or service. <br> Made by 00017339 </a></p>
+        </div>
+
+    </footer>   
+
+</body>
+</html>

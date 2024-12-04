@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/new.css">
+
+</head>
+<body>
+    <header class="header">
+        
+        <!-- main navigation bar with logo,hamburger menu and banner -->
+        <nav class="navbar">
+           
+            <div class="logo">
+               <img src="../images/logo.png" alt="" width="">
+            </div>
+       
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            
+            <div class="navbar-links" id="navbarLinks">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+        </nav>
+       
+       <script>
+            function toggleMenu() {
+                const navbarLinks = document.getElementById("navbarLinks");
+                navbarLinks.classList.toggle("active");
+            }
+        </script>
+        </div>
+       
+        <div class="container-image">
+            <img class="main" src="../images/../images/news-1.jpeg" alt="">
+            <div class="text-overlay">Recent News! </div>
+        </div>   
+    </header>
+
+     <!-- Content with text -->
+     <div class="content" >
+        <div class="text">
+            <h3> Recent News! </h3> <hr>
+      </div>      
+    </div>
+
+<!-- Timeline of major news/events -->
+
+ <div class="timeline">
+
+    <!-- Event 1 (left) -->
+    <div class="container left" onclick="toggleContent(this)">
+      <div class="content">
+        
+        <p class="description"><strong> In 2024</strong> <br>WIUT launched a computer science course </p>
+      </div>
+    </div>
+  
+    <!--Event 2 (right) -->
+    <div class="container right" onclick="toggleContent(this)">
+      <div class="content">
+        <p class="description"><strong> In 2023 </strong> <br>WIUT was awarded the Top University “Scopus Award - 2023”.</p>
+        
+      </div>
+    </div>
+  
+    <!-- Event 3 (left) -->
+    <div class="container left" onclick="toggleContent(this)">
+      <div class="content">
+       
+        <p class="description"><strong>In 2021</strong> <br>The University launched an MSc in Business Intelligence.</p>
+      </div>
+    </div>
+  
+    <!-- Event 4 (right) -->
+    <div class="container right" onclick="toggleContent(this)">
+      <div class="content">
+        
+        <p class="description"><strong> In 2021</strong> <br>WIUT launched an MA in Human Resource Management </p>
+      </div>
+    </div>
+  
+    <!--  Event 5 (left) -->
+    <div class="container left" onclick="toggleContent(this)">
+      <div class="content">
+       
+        
+        <p class="description"><strong> In 2019 </strong> <br>Opening of SAP Next-Gen Entrepreneurship and Innovation Lab. </p>
+      </div>
+    </div>
+     <!-- Event 6 (right) -->
+     <div class="container right" onclick="toggleContent(this)">
+        <div class="content">
+          <p class="description"><strong> In 2018 </strong> <br>WIUT held the first International Conference in Internationalization and Innovations</p>
+          
+        </div>
+      </div>
+      <!-- Event 7 (left) -->
+      <div class="container left" onclick="toggleContent(this)">
+        <div class="content">
+          <p class="description"><strong> In 2015 </strong> <br>Inauguration of the WIUT Alumni Association</p>
+          
+        </div>
+      </div>
+</div>
+  
+
+  <script> 
+
+   //  Animation of timeline when they appear on screen
+    function animateTimeline() {
+      const containers = document.querySelectorAll('.container');
+      containers.forEach(container => {
+        const rect = container.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          container.style.opacity = 1;
+          container.style.transform = 'translateY(0)';
+        }
+      });
+    }
+    
+    // Scroll event listener to trigger the animation
+    window.addEventListener('scroll', animateTimeline);
+    
+    // Initial animation when the page loads
+    window.addEventListener('load', animateTimeline);
+    
+    // Function to toggle the content visibility on click (expand/collapse)
+    function toggleContent(event) {
+      const content = event.querySelector('.content');
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null; 
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px'; 
+      }
+    }
+ </script>
+
+    <!-- footer -->
+    <footer>
+
+        <div class="footer-container">
+               
+            <div class="footer-section footer-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+    
+            
+            <div class="footer-section social-links">
+                <h3>- Follow us on social media -</h3>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+       
+        <div class="footer-section">
+            <h3>- We are -</h3>
+            <P>Westminster International University in Tashkent</P>
+        </div>
+                 
+        <div class="legal-info">
+
+            <p>&copy; All Rights Reserved. </a></p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,326 @@
+
+
+
+/* styles of navbar */
+
+header {
+ 
+    background-color:  #ffff;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bcd7f0;
+    padding: 10px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  }
+  
+  .navbar a {
+    color: #0c5497;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    transition: background-color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  }
+  
+  .navbar a:hover {
+    background-color: #89b9e7;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-links a {
+    font-size: 18px;
+  }
+  
+  /* responsiveness for screens smaller than 854px */
+  
+  @media screen and (max-width: 854px) {
+    
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #89b9e7;
+    }
+  
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+  
+    .navbar-links a {
+        text-align: center;
+        padding: 12px;
+        width: 90%;
+        box-sizing: border-box;
+        font-size: smaller;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }
+ 
+   /* logo, contact image, div, text and responsiveness */
+  
+  .main {
+    width: 100%;        
+    height: auto;       
+    display: block;     
+  }
+  
+  .header div {
+    max-width: 100%;
+    overflow: hidden; 
+  }
+  
+  .logo img {
+    height: 90px;
+    width: auto;
+  }
+  
+  .logo {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 50px;
+  } 
+    
+  .container-image{
+    position: relative;
+    
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(6, 42, 83);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+@media screen and (max-width: 430px) {
+    
+    .text-overlay {
+        font-size: 30px;
+    }  }
+
+  /* image in content  */
+  .content {
+    display: flex;
+   
+  }
+  
+  .img2 {
+    flex: 1;
+    border-radius: 10%;
+    width: 100%;        
+    height: auto;       
+    display: block;     
+  }
+  
+  .img2 {
+    width: 60%;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 5px;
+  }
+  
+  /* responsiveness for iamge and text */
+
+  @media (max-width: 865px) {
+    .img2 {
+      width: 60%;
+      height: auto;
+      margin-left: 30px;
+      margin-top: 60px;
+      margin-right: 10px;
+    }
+  }
+  
+  
+   @media screen and (max-width: 854px) {
+    .overlay-text {
+        background-image: url('./images/home-1.jpg');  
+        background-size: cover;  
+        background-position: center top;  
+        border-radius: 50px;
+        flex-direction:column;
+        align-items: start;
+        justify-content: space-between;    
+    } 
+  }  
+  
+
+  /* Text in content*/
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+  }
+  .content h3 {
+    color: #063c6e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 60px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(162, 208, 237, 0.7);
+  
+  }
+  
+  .content p {
+    color: #063c6e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(162, 208, 237, 0.7);
+  
+}
+
+/* title of the table */
+
+
+.name-table{
+    color: #063c6e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    letter-spacing: 2px;
+    font-size: 17px;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+/* table of courses */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-bottom: 60px;
+    margin-left: 70px;
+  }
+  
+  td, th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d1e1f8;
+  }
+
+
+/* footer style */
+
+footer {
+       
+    background-color: #063c6e;
+    color: white;
+    margin-top: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 2px;
+  }
+  
+  
+  .footer-links a {
+    color: #ffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    background-color: #20547f;
+  }
+  
+  
+  .social-links a {
+    color: #ffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    background-color: #20547f;
+  }
+  
+  
+  .legal-info {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ecf0f1;
+  }
+  
+  /* respponsive footer */
+  
+  @media (max-width: 854px) {
+   
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        font-size: smaller;  
+    }
+  
+    .footer-section {
+        margin-bottom: 20px;
+        font-size: smaller;  
+    }
+  
+  }
+  
+  @media (max-width: 854px) {
+    .navbar {
+      flex-direction:column;
+      align-items: start;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-section {
+        margin-bottom: 20px;
+    }
+  
+  }

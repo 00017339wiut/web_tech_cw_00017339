@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/study.css">
+
+</head>
+<body>
+    <header class="header">      
+        <!-- main navigation bar with logo,hamburger menu and banner-->
+        <nav class="navbar">
+           
+            <div class="logo">
+               <img src="../images/logo.png" alt="" width="">
+            </div>
+       
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            
+            <div class="navbar-links" id="navbarLinks">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+        </nav>
+       
+       <script>
+            function toggleMenu() {
+                const navbarLinks = document.getElementById("navbarLinks");
+                navbarLinks.classList.toggle("active");
+            }
+        </script>
+        </div>
+       
+        <div class="container-image">
+            <img class="main" src="../images/study-1.jpg" alt="">
+            <div class="text-overlay">study at WIUT! </div>
+        </div>        
+    </header>
+
+     <!--  content with text and image  -->
+     <div class="content" >
+
+        <div class="text">
+            <h3> Study with us at WIUT! </h3>
+            <p> Studying at our university offers a unique <br>
+                opportunity for personal and academic growth. <br>  
+                It fosters critical thinking, creativity, <br> and lifelong connections, preparing you
+                <br> for a successful career and meaningful contributions to society.
+               
+            </p>
+      </div>
+
+        <div>
+            <img class="img2" src="../images/about-2.jpg" alt="">
+        </div>       
+    </div>
+
+    <!--  table title and table with a list of courses  -->
+
+    <h2 class="name-table">List of Courses at WIUT </h2>
+
+    <div style="overflow-x:auto;">
+    <table>
+        <tr>
+          <th> Under Graduate Course Name</th>
+          <th> Duration </th>
+          <th> Price </th>
+          <th> Credits per Year</th>
+        </tr>
+        <tr>
+          <td> Business Information Systems</td>
+          <td>  3 Years</td>
+          <td> 3876.99 $ </td>
+          <td>120 Credits</td>
+        </tr>
+        <tr>
+          <td>  Economics with Finance</td>
+          <td> 4 Years</td>
+          <td>  4890.99 $ </td>
+          <td>120 Credits</td>
+        </tr>
+        <tr>
+          <td> Commercial Law</td>
+          <td> 5 Years</td>
+          <td>  5531.99 $ </td>
+          <td>120 Credits</td>
+        </tr>
+        <tr>
+          <td>  Business Management</td>
+          <td> 3 Years</td>
+          <td> 3260.99 $ </td>
+          <td>120 Credits</td>
+        </tr>
+        <tr>
+          <td> Economics with Data Science</td>
+          <td> 4 Years</td>
+          <td>  4600.99 $ </td>
+          <td>120 Credits</td>
+        </tr>
+        <tr>
+          <td> Computer Science</td>
+          <td>  5 Years</td>
+          <td> 5320.99 $ </td>
+          <td>120 Credits</td>
+          
+        </tr>
+        <tr>
+            <td> Business Management with marketing</td>
+            <td>  3 Years</td>
+            <td> 3320.99 $ </td>
+            <td>120 Credits</td>
+            
+        </tr>
+        <tr>
+            <td> Finance</td>
+            <td>  5 Years</td>
+            <td> 5530.99 $ </td>
+            <td>120 Credits</td>
+            
+        </tr>
+        <tr>
+            <td> Business Management with Finance</td>
+            <td>  5 Years</td>
+            <td> 5320.99 $ </td>
+            <td>120 Credits</td>
+            
+        </tr>
+       
+      </table>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        <div class="footer-container">
+               
+            <div class="footer-section footer-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/study.html">Study</a>
+                <a href="../html/new.html">News</a>
+                <a href="../html/campus.html">Campus Life</a>
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+    
+            
+            <div class="footer-section social-links">
+                <h3>- Follow us on social media -</h3>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+       
+        <div class="footer-section">
+            <h3>- We are -</h3>
+            <P>Westminster International University in Tashkent</P>
+        </div>
+                 
+        <div class="legal-info">
+
+            <p>&copy; All Rights Reserved. </a></p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
